@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MA1112 Algebra - Exam Solutions Guide</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  h1, h2, h3 {
+    color: #2c3e50;
+  }
+  h1 {
+    text-align: center;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+  }
+  h2 {
+    color: #3498db;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+  }
+  .question {
+    margin-bottom: 25px;
+  }
+  .formula {
+    font-family: "Courier New", Courier, monospace;
+    background-color: #f7f9fa;
+    padding: 10px;
+    border: 1px solid #e1e8ed;
+    border-radius: 4px;
+    margin: 10px 0;
+    overflow-x: auto;
+  }
+  ul, ol {
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 5px;
+  }
+</style>
+</head>
+<body>
+
+<h1>MA1112 Algebra - Exam Solutions Guide</h1>
+
+<div class="question">
+  <h2>1. Finding the Area of a Given Triangle Using Vector Algebra</h2>
+  <p>To find the area of a triangle with vertices A, B, and C, you can use the cross product of two vectors that form two sides of the triangle.</p>
+  <ol>
+    <li>Create two vectors representing two sides of the triangle, for example, <b>AB</b> = B - A and <b>AC</b> = C - A.</li>
+    <li>Calculate the cross product of these two vectors: <b>AB</b> &times; <b>AC</b>.</li>
+    <li>Find the magnitude of the resulting vector: |<b>AB</b> &times; <b>AC</b>|.</li>
+    <li>The area of the triangle is half the magnitude of the cross product:
+      <div class="formula">Area = &frac12; |<b>AB</b> &times; <b>AC</b>|</div>
+    </li>
+  </ol>
+</div>
+
+<div class="question">
+  <h2>2. Determining whether given lines form a Triangle or a Straight Line using vectors</h2>
+  <p>Given three points A, B, and C, you can determine if they form a triangle or a straight line by analyzing the vectors between them.</p>
+  <ul>
+    <li><b>Straight Line:</b> The points form a straight line if the vectors between them are parallel. For example, if <b>AB</b> is a scalar multiple of <b>AC</b> (i.e., <b>AB</b> = k * <b>AC</b> for some scalar k).</li>
+    <li><b>Triangle:</b> The points form a triangle if the vectors are not parallel.</li>
+  </ul>
+</div>
+
+<div class="question">
+  <h2>3. Finding the Scalar Equation of the Plane using vectors</h2>
+  <p>To find the scalar equation of a plane, you need a point on the plane and a vector normal (perpendicular) to the plane.</p>
+  <ol>
+    <li>Find a normal vector <b>n</b> to the plane. If you have three points A, B, and C on the plane, you can find the normal vector by taking the cross product of two vectors in the plane, e.g., <b>n</b> = <b>AB</b> &times; <b>AC</b>.</li>
+    <li>Choose a point P₀(x₀, y₀, z₀) on the plane.</li>
+    <li>The vector equation of the plane is (<b>r</b> - <b>r</b>₀) &middot; <b>n</b> = 0, where <b>r</b> is the position vector of any point (x, y, z) on the plane.</li>
+    <li>Substitute the values into the vector equation and simplify to get the scalar equation in the form ax + by + cz = d.</li>
+  </ol>
+</div>
+
+<div class="question">
+  <h2>4. Judging whether the given 3D lines are skew lines</h2>
+  <p>Two lines in 3D space are skew if they are not parallel and do not intersect.</p>
+  <ol>
+    <li>Check if the direction vectors of the two lines are parallel. If they are, the lines are not skew.</li>
+    <li>If the direction vectors are not parallel, check if the lines intersect. To do this, set the vector equations of the two lines equal to each other and see if there is a solution for the parameters. If there is no solution, the lines do not intersect, and are therefore skew.</li>
+  </ol>
+</div>
+
+<div class="question">
+  <h2>5. Judging whether some complex numbers are purely imaginary</h2>
+  <p>A complex number z = x + iy is purely imaginary if its real part is zero (x = 0).</p>
+  <p>To solve problems of this type, you will typically need to perform some algebraic manipulation of the given conditions to show that the real part of the complex number is zero.</p>
+</div>
+
+<div class="question">
+  <h2>6. Proving basic, simple inequalities in Complex Numbers, including triangle inequality</h2>
+  <p>The triangle inequality states that for any two complex numbers z₁ and z₂, |z₁ + z₂| &le; |z₁| + |z₂|.</p>
+  <p>To prove inequalities involving complex numbers, you will often use the properties of the modulus and the complex conjugate. Remember that |z|&sup2; = z * z&#773;.</p>
+</div>
+
+<div class="question">
+  <h2>7. Use De Moivre's Theorem to prove a Complex Trigonometric Identity</h2>
+  <p>De Moivre's Theorem states that (cos &theta; + i sin &theta;)ⁿ = cos(n&theta;) + i sin(n&theta;).</p>
+  <ol>
+    <li>Start with De Moivre's Theorem.</li>
+    <li>Expand the left side of the equation using the binomial theorem.</li>
+    <li>Separate the real and imaginary parts of the expansion.</li>
+    <li>Equate the real and imaginary parts of the expansion to the real and imaginary parts of the right side of De Moivre's Theorem (cos(n&theta;) and sin(n&theta;), respectively) to obtain the desired trigonometric identities.</li>
+  </ol>
+</div>
+
+<div class="question">
+  <h2>8. Questions related to Range and Co-Domain of Functions, One-to-One and Onto Functions, Finding the Inverse of Functions</h2>
+  <ul>
+    <li><b>Range and Co-Domain:</b> The co-domain is the set of all possible outputs, while the range is the set of all actual outputs.</li>
+    <li><b>One-to-One (Injective):</b> A function is one-to-one if f(x₁) = f(x₂) implies x₁ = x₂.</li>
+    <li><b>Onto (Surjective):</b> A function is onto if its range is equal to its co-domain.</li>
+    <li><b>Inverse Function:</b> An inverse function f⁻¹ exists if and only if f is a bijection (both one-to-one and onto). To find the inverse, set y = f(x) and solve for x in terms of y.</li>
+  </ul>
+</div>
+
+<div class="question">
+  <h2>9. Describing the behaviour of a given graph using the Algebra of Polynomials</h2>
+  <p>To describe the behavior of a polynomial graph, you should consider:</p>
+  <ul>
+    <li><b>Roots (x-intercepts):</b> Find the values of x for which the polynomial is equal to zero.</li>
+    <li><b>Turning Points:</b> Find the local maxima and minima of the polynomial by taking the derivative and finding where it is equal to zero.</li>
+    <li><b>End Behavior:</b> Use the leading coefficient test to determine the behavior of the graph as x approaches &infin; and -&infin;.</li>
+  </ul>
+</div>
+
+<div class="question">
+  <h2>10. Judging whether a given function is a Bijection</h2>
+  <p>A function is a bijection if it is both one-to-one and onto.</p>
+  <ol>
+    <li>Prove that the function is one-to-one (injective).</li>
+    <li>Prove that the function is onto (surjective).</li>
+  </ol>
+</div>
+
+<div class="question">
+  <h2>11. Finding the inverse of a square matrix</h2>
+  <p>To find the inverse of a square matrix A, you can use the formula A⁻¹ = (1/det(A)) * adj(A).</p>
+  <ol>
+    <li>Calculate the determinant of the matrix, det(A). If det(A) = 0, the inverse does not exist.</li>
+    <li>Find the matrix of minors.</li>
+    <li>Find the matrix of cofactors by applying the checkerboard pattern of signs to the matrix of minors.</li>
+    <li>Find the adjugate (or adjoint) of the matrix by transposing the cofactor matrix.</li>
+    <li>Multiply the adjugate matrix by 1/det(A) to get the inverse.</li>
+  </ol>
+</div>
+
+<div class="question">
+  <h2>12. Checking an Identity relevant to matrix multiplication</h2>
+  <p>To check a matrix identity, perform the matrix multiplication on both sides of the equation and verify that the resulting matrices are equal.</p>
+</div>
+
+<div class="question">
+  <h2>13. Using the (ε – δ) definition of a limit of a function, to prove a given limit</h2>
+  <p>To prove that lim (x&rarr;c) f(x) = L, you need to show that for any ε > 0, there exists a δ > 0 such that if 0 < |x - c| < δ, then |f(x) - L| < ε.</p>
+  <p>The general structure of the proof is to start with |f(x) - L| < ε and work backwards to find a suitable δ in terms of ε.</p>
+</div>
+
+<div class="question">
+  <h2>14. Using the (ε – n) definition of a limit of a sequence, to prove a given limit</h2>
+  <p>To prove that lim (n&rarr;&infin;) aₙ = L, you need to show that for any ε > 0, there exists an integer N such that if n > N, then |aₙ - L| < ε.</p>
+  <p>Similar to the ε-δ proof, you will start with |aₙ - L| < ε and work backwards to find a suitable N in terms of ε.</p>
+</div>
+
+<div class="question">
+  <h2>15. Determining whether a given series is convergent or divergent</h2>
+  <p>There are several tests you can use to determine if a series converges or diverges:</p>
+  <ul>
+    <li><b>p-series Test:</b> For a series of the form &Sigma; 1/nᵖ.</li>
+    <li><b>Comparison Test:</b> Compare the series to a known convergent or divergent series.</li>
+    <li><b>Ratio Test:</b> Useful for series involving factorials or exponentials.</li>
+    <li><b>Root Test:</b> Useful for series where the terms are raised to the nth power.</li>
+    <li><b>Alternating Series Test:</b> For alternating series.</li>
+  </ul>
+</div>
+
+<div class="question">
+  <h2>16. Determining whether a given series is convergent or divergent</h2>
+  <p>This is the same as question 15. Please refer to the tests listed above.</p>
+</div>
+
+<div class="question">
+  <h2>17. Using the Newton-Raphson Method to find an approximate real root of a polynomial equation</h2>
+  <p>The Newton-Raphson method is an iterative process for finding the roots of a function.</p>
+  <ol>
+    <li>Start with an initial guess, x₀.</li>
+    <li>Iterate using the formula: xₙ₊₁ = xₙ - f(xₙ)/f'(xₙ)</li>
+    <li>Continue iterating until the desired level of accuracy is reached.</li>
+  </ol>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MA1112 Algebra - Reference Sheet</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  h1, h2, h3 {
+    color: #2c3e50;
+  }
+  h1 {
+    text-align: center;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+  }
+  h2 {
+    color: #3498db;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+  }
+  .section {
+    margin-bottom: 25px;
+  }
+  .formula {
+    font-family: "Courier New", Courier, monospace;
+    background-color: #f7f9fa;
+    padding: 10px;
+    border: 1px solid #e1e8ed;
+    border-radius: 4px;
+    margin: 10px 0;
+    overflow-x: auto;
+  }
+  ul {
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 5px;
+  }
+</style>
+</head>
+<body>
+
+<h1>MA1112 Algebra - Reference Sheet</h1>
+
+<div class="section">
+  <h2>Part 1: Vector Algebra</h2>
+
+  <h3>1. Fundamental Concepts</h3>
+  <ul>
+    <li><b>Vector:</b> A quantity with both magnitude and direction.</li>
+    <li><b>Scalar:</b> A quantity with only magnitude.</li>
+    <li><b>Position Vector:</b> A vector that starts from the origin O.</li>
+    <li><b>Unit Vector:</b> A vector with a magnitude of 1. The unit vector in the direction of vector <b>a</b> is denoted as <b>â</b> and is calculated as:
+      <div class="formula"><b>â</b> = <b>a</b> / |<b>a</b>|</div>
+    </li>
+    <li><b>Magnitude of a Vector:</b> For <b>a</b> = a₁<b>i</b> + a₂<b>j</b> + a₃<b>k</b>, the magnitude is:
+      <div class="formula">|<b>a</b>| = &radic;(a₁&sup2; + a₂&sup2; + a₃&sup2;)</div>
+    </li>
+    <li><b>Direction Cosines:</b> For a vector <b>a</b> = a₁<b>i</b> + a₂<b>j</b> + a₃<b>k</b>, the direction cosines are:
+      <div class="formula">cos &alpha; = a₁ / |<b>a</b>|, cos &beta; = a₂ / |<b>a</b>|, cos &gamma; = a₃ / |<b>a</b>|</div>
+      Property: cos&sup2;&alpha; + cos&sup2;&beta; + cos&sup2;&gamma; = 1
+    </li>
+  </ul>
+
+  <h3>2. Vector Operations</h3>
+  <ul>
+    <li><b>Scalar (Dot) Product:</b>
+      <div class="formula"><b>a</b> &middot; <b>b</b> = |<b>a</b>| |<b>b</b>| cos &theta;</div>
+      <div class="formula"><b>a</b> &middot; <b>b</b> = a₁b₁ + a₂b₂ + a₃b₃</div>
+      If <b>a</b> &perp; <b>b</b>, then <b>a</b> &middot; <b>b</b> = 0.<br>
+      Projection of <b>b</b> onto <b>a</b>: <b>b</b> &middot; <b>â</b>
+    </li>
+    <li><b>Vector (Cross) Product:</b>
+      <div class="formula"><b>a</b> &times; <b>b</b> = (|<b>a</b>| |<b>b</b>| sin &theta;) <b>n&#770;</b></div>
+      <div class="formula"><b>a</b> &times; <b>b</b> = (a₂b₃ - a₃b₂) <b>i</b> - (a₁b₃ - a₃b₁) <b>j</b> + (a₁b₂ - a₂b₁) <b>k</b></div>
+      If <b>a</b> || <b>b</b>, then <b>a</b> &times; <b>b</b> = 0.
+    </li>
+    <li><b>Scalar Triple Product:</b>
+      <div class="formula"><b>a</b> &middot; (<b>b</b> &times; <b>c</b>) = (<b>a</b> &times; <b>b</b>) &middot; <b>c</b></div>
+      Volume of a parallelepiped: V = |<b>a</b> &middot; (<b>b</b> &times; <b>c</b>)|
+    </li>
+  </ul>
+
+  <h3>3. Lines and Planes</h3>
+  <ul>
+    <li><b>Equation of a Line:</b><br>
+      Vector form: <b>r</b> = <b>a</b> + &lambda;<b>v</b><br>
+      Cartesian form: (x - x&#8320;)/a = (y - y&#8320;)/b = (z - z&#8320;)/c
+    </li>
+    <li><b>Equation of a Plane:</b><br>
+      Vector form (point and two direction vectors): <b>r</b> = <b>a</b> + &lambda;<b>b</b> + &mu;<b>c</b><br>
+      Vector form (point and normal vector): (<b>r</b> - <b>r</b>&#8320;) &middot; <b>n</b> = 0<br>
+      Scalar form: ax + by + cz = d
+    </li>
+    <li><b>Area of a Triangle:</b> Given two vectors <b>a</b> and <b>b</b> forming two sides of a triangle, the area is:
+      <div class="formula">Area = &frac12; |<b>a</b> &times; <b>b</b>|</div>
+    </li>
+    <li><b>Skew Lines:</b> Two lines are skew if they are not parallel and do not intersect. To check if two lines are skew:
+      <ol>
+        <li>Check if their direction vectors are parallel.</li>
+        <li>Check if they intersect by setting their vector equations equal to each other. If there is no solution, and they are not parallel, they are skew.</li>
+      </ol>
+    </li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>Part 2: Complex Numbers</h2>
+
+  <h3>1. Forms of Complex Numbers</h3>
+  <ul>
+    <li><b>Rectangular Form:</b> z = x + iy</li>
+    <li><b>Polar Form:</b> z = r(cos &theta; + i sin &theta;)</li>
+    <li><b>Exponential Form:</b> z = re<sup>i&theta;</sup></li>
+  </ul>
+
+  <h3>2. Basic Definitions</h3>
+  <ul>
+    <li><b>Modulus:</b> |z| = r = &radic;(x&sup2; + y&sup2;)</li>
+    <li><b>Argument:</b> arg(z) = &theta;</li>
+    <li><b>Principal Argument:</b> -π < Arg(z) &le; π</li>
+    <li><b>Complex Conjugate:</b> z&#773; = x - iy</li>
+    <li>A number is <b>purely imaginary</b> if its real part is zero (Re(z) = 0).</li>
+  </ul>
+
+  <h3>3. Operations and Theorems</h3>
+  <ul>
+    <li><b>Euler's Identity:</b> e<sup>i&theta;</sup> = cos &theta; + i sin &theta;</li>
+    <li><b>De Moivre's Theorem:</b> (cos &theta; + i sin &theta;)ⁿ = cos(n&theta;) + i sin(n&theta;)</li>
+    <li><b>Triangle Inequality:</b> |z₁ + z₂| &le; |z₁| + |z₂|</li>
+    <li>|z₁ - z₂| &ge; ||z₁| - |z₂||</li>
+  </ul>
+
+</div>
+
+<div class="section">
+  <h2>Part 3: Functions</h2>
+
+  <h3>1. Basic Concepts</h3>
+  <ul>
+    <li><b>Function:</b> A rule that assigns to each element in the domain exactly one element in the co-domain.</li>
+    <li><b>Domain:</b> The set of all possible input values.</li>
+    <li><b>Co-domain:</b> The set of all possible output values.</li>
+    <li><b>Range:</b> The set of all actual output values.</li>
+  </ul>
+
+  <h3>2. Types of Functions</h3>
+  <ul>
+    <li><b>One-to-one (Injective):</b> Every element in the domain maps to a unique element in the range. To prove, show that if f(x₁) = f(x₂), then x₁ = x₂.</li>
+    <li><b>Onto (Surjective):</b> The range is equal to the co-domain. Every element in the co-domain has a corresponding element in the domain.</li>
+    <li><b>Bijection:</b> A function that is both one-to-one and onto.</li>
+    <li><b>Inverse Function (f⁻¹):</b> A function that reverses the effect of f. An inverse function exists if and only if f is a bijection.</li>
+    <li><b>Even Function:</b> f(-x) = f(x). The graph is symmetric about the y-axis.</li>
+    <li><b>Odd Function:</b> f(-x) = -f(x). The graph is symmetric about the origin.</li>
+  </ul>
+
+</div>
+
+<div class="section">
+  <h2>Part 4: Matrices</h2>
+
+  <h3>1. Basic Concepts</h3>
+  <ul>
+    <li><b>Matrix:</b> A rectangular array of numbers.</li>
+    <li><b>Identity Matrix (I):</b> A square matrix with 1s on the main diagonal and 0s elsewhere.</li>
+    <li><b>Transpose (Aᵀ):</b> The matrix obtained by interchanging the rows and columns of A.</li>
+  </ul>
+
+  <h3>2. Determinants</h3>
+  <ul>
+    <li><b>Determinant (det(A) or |A|):</b> A scalar value that can be computed from the elements of a square matrix.</li>
+    <li>A matrix is <b>singular</b> if det(A) = 0.</li>
+    <li>A matrix is <b>non-singular</b> or <b>invertible</b> if det(A) &ne; 0.</li>
+    <li>For a 2x2 matrix A = [[a, b], [c, d]], det(A) = ad - bc.</li>
+  </ul>
+
+  <h3>3. Inverse of a Matrix</h3>
+  <ul>
+    <li><b>Inverse (A⁻¹):</b> A⁻¹ exists if and only if det(A) &ne; 0.</li>
+    <li>A A⁻¹ = A⁻¹ A = I</li>
+    <li><b>Formula for the inverse of a 2x2 matrix:</b><br>
+      If A = [[a, b], [c, d]], then A⁻¹ = (1/(ad-bc)) * [[d, -b], [-c, a]]
+    </li>
+    <li><b>Finding the inverse of a larger matrix:</b>
+      <ol>
+        <li>Calculate the matrix of minors.</li>
+        <li>Find the matrix of cofactors.</li>
+        <li>Find the adjoint (or adjugate) of the matrix by transposing the cofactor matrix.</li>
+        <li>The inverse is the adjoint matrix divided by the determinant.</li>
+      </ol>
+    </li>
+  </ul>
+
+</div>
+
+<div class="section">
+  <h2>Part 5: Limits and Series</h2>
+
+  <h3>1. Limits</h3>
+  <ul>
+    <li><b>Limit of a Function (ε-δ Definition):</b> lim (x&rarr;c) f(x) = L if for every ε > 0, there exists a δ > 0 such that if 0 < |x - c| < δ, then |f(x) - L| < ε.</li>
+    <li><b>Limit of a Sequence (ε-n Definition):</b> lim (n&rarr;&infin;) aₙ = L if for every ε > 0, there exists an integer N such that if n > N, then |aₙ - L| < ε.</li>
+  </ul>
+
+  <h3>2. Series</h3>
+  <ul>
+    <li><b>Convergent Series:</b> A series is convergent if its sequence of partial sums converges.</li>
+    <li><b>p-series Test:</b> The series &Sigma; 1/nᵖ converges if p > 1 and diverges if p &le; 1.</li>
+    <li><b>Comparison Test:</b> If 0 &le; aₙ &le; bₙ for all n, then:
+      <ul>
+        <li>If &Sigma; bₙ converges, then &Sigma; aₙ converges.</li>
+        <li>If &Sigma; an diverges, then &Sigma; bₙ diverges.</li>
+      </ul>
+    </li>
+  </ul>
+
+</div>
+
+<div class="section">
+  <h2>Part 6: Numerical Methods</h2>
+
+  <h3>1. Newton-Raphson Method</h3>
+  <ul>
+    <li>An iterative method for finding successively better approximations to the roots (or zeroes) of a real-valued function.</li>
+    <li><b>Formula:</b> xₙ₊₁ = xₙ - f(xₙ)/f'(xₙ)</li>
+  </ul>
+
+</div>
+
+</body>
+</html>
